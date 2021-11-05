@@ -4,9 +4,106 @@
         <title></title>
         <link>undefined</link>
         <description>undefined</description>
-        <lastBuildDate>Fri, 05 Nov 2021 13:39:05 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 05 Nov 2021 13:53:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Joplin Pages Publisher</generator>
+        <item>
+            <title><![CDATA[Styleguide]]></title>
+            <guid>48242e477ac442c8b786c038c52265e0</guid>
+            <pubDate>Mon, 24 May 2021 11:35:27 GMT</pubDate>
+            <content:encoded><![CDATA[<p><img src="/_resources/a88437f86c9e4dfabeac0ba796bd95d8.png" /> <img src="/_resources/53834e34e04b42d6be36fe29813936d8.png" /> <img src="/_resources/94e19cae5d2e4e13baefb53823ca88dd.png" /> <img src="/_resources/791e42f7d87b4aaab18acf1656853a08.png" /> <img src="/_resources/05a371fee0644eb9becd4026ee27590f.png" /></p>
+<hr />
+<h1 id="h1-heading-8-">h1 Heading 😎</h1>
+<h2 id="h2-heading">h2 Heading</h2>
+<h3 id="h3-heading">h3 Heading</h3>
+<h4 id="h4-heading">h4 Heading</h4>
+<h5 id="h5-heading">h5 Heading</h5>
+<h6 id="h6-heading">h6 Heading</h6>
+<hr />
+<h2 id="emphasis">Emphasis</h2>
+<p><strong>This is bold text</strong></p>
+<p><strong>This is bold text</strong></p>
+<p><em>This is italic text</em></p>
+<p><em>This is italic text</em></p>
+<p><s>Strikethrough</s></p>
+<h2 id="blockquotes">Blockquotes</h2>
+<blockquote>
+<p>Blockquotes can also be nested…</p>
+<blockquote>
+<p>…by using additional greater-than signs right next to each other…</p>
+<blockquote>
+<p>…or with spaces between arrows.</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="code">Code</h2>
+<p>Inline <code>code</code></p>
+<p>Indented code</p>
+<pre><code>// Some comments
+line 1 of code
+line 2 of code
+line 3 of code
+</code></pre>
+<p>Block code “fences”</p>
+<div><pre class="hljs"><code><span class="hljs-function"><span class="hljs-title">Sample</span></span> text here...</code></pre></div>
+<p>Syntax highlighting</p>
+<div><pre class="hljs"><code><span class="hljs-keyword">var</span> foo = <span class="hljs-keyword">function</span> (<span class="hljs-params">bar</span>) {
+  <span class="hljs-keyword">return</span> bar++;
+};
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">foo</span>(<span class="hljs-number">5</span>));</code></pre></div>
+<h2 id="tables">Tables</h2>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td>path to data files to supply the data that will be passed into templates.</td>
+</tr>
+<tr>
+<td>engine</td>
+<td>engine to be used for processing templates. Handlebars is the default.</td>
+</tr>
+<tr>
+<td>ext</td>
+<td>extension to be used for dest files.</td>
+</tr>
+</tbody>
+</table>
+<p>Right aligned columns</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">Option</th>
+<th style="text-align:right">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">data</td>
+<td style="text-align:right">path to data files to supply the data that will be passed into templates.</td>
+</tr>
+<tr>
+<td style="text-align:right">engine</td>
+<td style="text-align:right">engine to be used for processing templates. Handlebars is the default.</td>
+</tr>
+<tr>
+<td style="text-align:right">ext</td>
+<td style="text-align:right">extension to be used for dest files.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="links">Links</h2>
+<p><a title="http://dev.nodeca.com" href="http://dev.nodeca.com">link text</a></p>
+<p><a title="title text!" href="http://nodeca.github.io/pica/demo/">link with title</a></p>
+<p>Autoconverted link <a title="https://github.com/nodeca/pica" href="https://github.com/nodeca/pica">https://github.com/nodeca/pica</a> (enable linkify to see)</p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[1. Welcome to Joplin! 🗒️]]></title>
             <guid>e77c9734a53c4c12988b2736c70239cd</guid>
