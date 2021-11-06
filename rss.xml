@@ -4,11 +4,11 @@
         <title></title>
         <link>undefined</link>
         <description>undefined</description>
-        <lastBuildDate>Sat, 06 Nov 2021 21:52:11 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 06 Nov 2021 21:54:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Joplin Pages Publisher</generator>
         <item>
-            <title><![CDATA[Joplin | Plugin | Создание плагина оглавления]]></title>
+            <title><![CDATA[Joplin | Docs | RU | Plugin | Создание плагина оглавления]]></title>
             <guid>f75dbe0c675d49fc8330519ba053dca4</guid>
             <pubDate>Sat, 06 Nov 2021 13:36:57 GMT</pubDate>
             <content:encoded><![CDATA[<h1 id="создание-плагина-оглавления">Создание плагина оглавления</h1>
@@ -19,6 +19,8 @@
 <li>Как создать webview</li>
 <li>Как отслеживать изменения в пользовательском интерфейсе</li>
 </ul>
+<h2 id="настройка-окружения">Настройка окружения</h2>
+<p>Прежде чем продолжить, убедитесь, что ваше окружения настроена правильно, как описано в <a title="https://joplinapp.org/api/get_started/plugins/" href="https://joplinapp.org/api/get_started/plugins/">руководстве по началу работы</a>.</p>
 <h2 id="получить-текущую-заметку">Получить текущую заметку</h2>
 <p>Чтобы создать таблицу, вам потребуется доступ к содержимому выбранной в данный момент заметки, и вам нужно будет обновлять оглавление каждый раз, когда заметка изменяется. Все это можно сделать с помощью API рабочей области, которое предоставляет информацию об активном редактируемом контенте.</p>
 <p>Итак, в обработчике события <code>onStart()</code> добавьте следующее:</p>
