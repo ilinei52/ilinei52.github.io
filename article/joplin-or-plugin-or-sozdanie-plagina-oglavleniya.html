@@ -1,17 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-    <channel>
-        <title></title>
-        <link>undefined</link>
-        <description>undefined</description>
-        <lastBuildDate>Sat, 06 Nov 2021 21:48:32 GMT</lastBuildDate>
-        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
-        <generator>Joplin Pages Publisher</generator>
-        <item>
-            <title><![CDATA[Joplin | Plugin | Создание плагина оглавления]]></title>
-            <guid>f75dbe0c675d49fc8330519ba053dca4</guid>
-            <pubDate>Sat, 06 Nov 2021 13:36:57 GMT</pubDate>
-            <content:encoded><![CDATA[<h1 id="создание-плагина-оглавления">Создание плагина оглавления</h1>
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" href="/_assets/main.css" />
+
+    <title>Joplin | Plugin | Создание плагина оглавления - ILINEI - Personal page</title>
+  <link rel="stylesheet" href="/_markdown_plugin_assets/highlight.js/atom-one-light.css" /></head>
+  <body>
+    <div class="main">
+      <nav class="navigation">
+        <a href="/">ILINEI - Personal page</a>
+      </nav>
+      <article>
+        <header>
+          <h1 class="article-title">Joplin | Plugin | Создание плагина оглавления</h1>
+          <div class="article-info">
+            <div>
+              <span
+                >Created At：<time datetime="1636205817484"
+                  >2021-11-06 16:36</time
+                ></span
+              >
+              <span
+                >Updated At：<time datetime="1636235290987"
+                  >2021-11-07 00:48</time
+                ></span
+              >
+            </div>
+            
+          </div>
+        </header>
+        <div class="article-content markdown-body"><h1 id="создание-плагина-оглавления">Создание плагина оглавления</h1>
 <p>Это руководство проведет вас через шаги по созданию плагина оглавления для Joplin. Рядом с текущей заметкой отобразится вид, содержащий ссылки на разделы заметки. Можно будет щелкнуть один из заголовков, чтобы перейти в соответствующий раздел.</p>
 <p>Из этого руководства вы узнаете о нескольких аспектах API Joplin, включая</p>
 <ul>
@@ -114,158 +135,8 @@
         .replace(<span class="hljs-regexp">/'/g</span>, <span class="hljs-string">"&amp;#039;"</span>);
 }</code></pre></div>
 <p>Снова попробуйте запустить плагин, и если вы выберете заметку с несколькими заголовками, вы должны увидеть список заголовков в консоли.</p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Styleguide]]></title>
-            <guid>48242e477ac442c8b786c038c52265e0</guid>
-            <pubDate>Mon, 24 May 2021 11:35:27 GMT</pubDate>
-            <content:encoded><![CDATA[<p><img src="/_resources/a88437f86c9e4dfabeac0ba796bd95d8.png" /> <img src="/_resources/53834e34e04b42d6be36fe29813936d8.png" /> <img src="/_resources/94e19cae5d2e4e13baefb53823ca88dd.png" /> <img src="/_resources/791e42f7d87b4aaab18acf1656853a08.png" /> <img src="/_resources/05a371fee0644eb9becd4026ee27590f.png" /></p>
-<hr />
-<h1 id="h1-heading-8-">h1 Heading 😎</h1>
-<h2 id="h2-heading">h2 Heading</h2>
-<h3 id="h3-heading">h3 Heading</h3>
-<h4 id="h4-heading">h4 Heading</h4>
-<h5 id="h5-heading">h5 Heading</h5>
-<h6 id="h6-heading">h6 Heading</h6>
-<hr />
-<h2 id="emphasis">Emphasis</h2>
-<p><strong>This is bold text</strong></p>
-<p><strong>This is bold text</strong></p>
-<p><em>This is italic text</em></p>
-<p><em>This is italic text</em></p>
-<p><s>Strikethrough</s></p>
-<h2 id="blockquotes">Blockquotes</h2>
-<blockquote>
-<p>Blockquotes can also be nested…</p>
-<blockquote>
-<p>…by using additional greater-than signs right next to each other…</p>
-<blockquote>
-<p>…or with spaces between arrows.</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2 id="code">Code</h2>
-<p>Inline <code>code</code></p>
-<p>Indented code</p>
-<pre><code>// Some comments
-line 1 of code
-line 2 of code
-line 3 of code
-</code></pre>
-<p>Block code “fences”</p>
-<div><pre class="hljs"><code><span class="hljs-function"><span class="hljs-title">Sample</span></span> text here...</code></pre></div>
-<p>Syntax highlighting</p>
-<div><pre class="hljs"><code><span class="hljs-keyword">var</span> foo = <span class="hljs-keyword">function</span> (<span class="hljs-params">bar</span>) {
-  <span class="hljs-keyword">return</span> bar++;
-};
-
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">foo</span>(<span class="hljs-number">5</span>));</code></pre></div>
-<h2 id="tables">Tables</h2>
-<table>
-<thead>
-<tr>
-<th>Option</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>data</td>
-<td>path to data files to supply the data that will be passed into templates.</td>
-</tr>
-<tr>
-<td>engine</td>
-<td>engine to be used for processing templates. Handlebars is the default.</td>
-</tr>
-<tr>
-<td>ext</td>
-<td>extension to be used for dest files.</td>
-</tr>
-</tbody>
-</table>
-<p>Right aligned columns</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:right">Option</th>
-<th style="text-align:right">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right">data</td>
-<td style="text-align:right">path to data files to supply the data that will be passed into templates.</td>
-</tr>
-<tr>
-<td style="text-align:right">engine</td>
-<td style="text-align:right">engine to be used for processing templates. Handlebars is the default.</td>
-</tr>
-<tr>
-<td style="text-align:right">ext</td>
-<td style="text-align:right">extension to be used for dest files.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="links">Links</h2>
-<p><a title="http://dev.nodeca.com" href="http://dev.nodeca.com">link text</a></p>
-<p><a title="title text!" href="http://nodeca.github.io/pica/demo/">link with title</a></p>
-<p>Autoconverted link <a title="https://github.com/nodeca/pica" href="https://github.com/nodeca/pica">https://github.com/nodeca/pica</a> (enable linkify to see)</p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[1. Welcome to Joplin! 🗒️]]></title>
-            <guid>e77c9734a53c4c12988b2736c70239cd</guid>
-            <pubDate>Mon, 08 Mar 2021 07:19:14 GMT</pubDate>
-            <content:encoded><![CDATA[<h1 id="welcome-to-joplin-spiral_note_pad">Welcome to Joplin! 🗒️</h1>
-<p>Joplin is a free, open source note taking and to-do application, which helps you write and organise your notes, and synchronise them between your devices. The notes are searchable, can be copied, tagged and modified either from the applications directly or from your own text editor. The notes are in <a title="https://joplinapp.org/#markdown" href="https://joplinapp.org/#markdown">Markdown format</a>. Joplin is available as a <strong>💻 desktop</strong>, <strong>📱 mobile</strong> and <strong>🔡 terminal</strong> application.</p>
-<p>The notes in this notebook give an overview of what Joplin can do and how to use it. In general, the three applications share roughly the same functionalities; any differences will be clearly indicated.</p>
-<p><img src="/_resources/ae443aa5ab874a8fba6f4f3e108c5146.png" /></p>
-<h2 id="joplin-is-divided-into-three-parts">Joplin is divided into three parts</h2>
-<p>Joplin has three main columns:</p>
-<ul>
-<li><strong>Sidebar</strong> contains the list of your notebooks and tags, as well as the synchronisation status.</li>
-<li><strong>Note List</strong> contains the current list of notes - either the notes in the currently selected notebook, the notes in the currently selected tag, or search results.</li>
-<li><strong>Note Editor</strong> is the place where you write your notes. There is a <strong>WYSIWYG editor</strong> and a <strong>Markdown editor</strong> - click on <strong>Code View</strong> to switch between both! You may also use an <a title="https://joplinapp.org/#external-text-editor" href="https://joplinapp.org/#external-text-editor">external editor</a> to edit notes. For example you can use something like Typora as an external editor and it will display the note as well as any embedded images.</li>
-</ul>
-<h2 id="writing-notes-in-markdown">Writing notes in Markdown</h2>
-<p>Markdown is a lightweight markup language with plain text formatting syntax. Joplin supports a <a title="https://joplinapp.org/markdown/" href="https://joplinapp.org/markdown/">Github-flavoured Markdown syntax</a> with a few variations and additions.</p>
-<p>In general, while Markdown is a markup language, it is meant to be human readable, even without being rendered. This is a simple example (you can see how it looks in the viewer panel):</p>
-<hr />
-<h1 id="heading">Heading</h1>
-<h2 id="sub-heading">Sub-heading</h2>
-<p>Paragraphs are separated by a blank line. Text attributes <em>italic</em>, <strong>bold</strong> and <code>monospace</code> are supported. You can create bullet lists:</p>
-<ul>
-<li>apples</li>
-<li>oranges</li>
-<li>pears</li>
-</ul>
-<p>Or numbered lists:</p>
-<ol>
-<li>wash</li>
-<li>rinse</li>
-<li>repeat</li>
-</ol>
-<p>This is a <a title="https://joplinapp.org" href="https://joplinapp.org">link</a> and, finally, below is a horizontal rule:</p>
-<hr />
-<p>A lot more is possible including adding code samples, math formulae or checkbox lists - see the <a title="https://joplinapp.org/#markdown" href="https://joplinapp.org/#markdown">Markdown documentation</a> for more information.</p>
-<h2 id="organising-your-notes">Organising your notes</h2>
-<h3 id="with-notebooks-notebook_with_decorative_cover">With notebooks 📔</h3>
-<p>Joplin notes are organised into a tree of notebooks and sub-notebooks.</p>
-<ul>
-<li>On <strong>desktop</strong>, you can create a notebook by clicking on New Notebook, then you can drag and drop them into other notebooks to organise them as you wish.</li>
-<li>On <strong>mobile</strong>, press the “+” icon and select “New notebook”.</li>
-<li>On <strong>terminal</strong>, press <code>:mn</code></li>
-</ul>
-<p><img src="/_resources/016e8acd39db49c0b05d4ca68ccdf56c.png" /></p>
-<h3 id="with-tags-label">With tags 🏷️</h3>
-<p>The second way to organise your notes is using tags:</p>
-<ul>
-<li>On <strong>desktop</strong>, right-click on any note in the Note List, and select “Edit tags”. You can then add the tags, separating them by commas.</li>
-<li>On <strong>mobile</strong>, open the note and press the “⋮” button and select “Tags”.</li>
-<li>On <strong>terminal</strong>, type <code>:help tag</code> for the available commands.</li>
-</ul>
-]]></content:encoded>
-        </item>
-    </channel>
-</rss>
+</div>
+      </article>
+    </div>
+  </body>
+</html>
