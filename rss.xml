@@ -4,9 +4,51 @@
         <title></title>
         <link>undefined</link>
         <description>undefined</description>
-        <lastBuildDate>Sun, 07 Nov 2021 00:10:19 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 24 Nov 2021 09:04:08 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Joplin Pages Publisher</generator>
+        <item>
+            <title><![CDATA[Рекурсивное алгоритм умножения Карацубы]]></title>
+            <guid>6510bd01ede34381b0636169f618af42</guid>
+            <pubDate>Tue, 23 Nov 2021 15:26:30 GMT</pubDate>
+            <content:encoded><![CDATA[<div><pre class="hljs"><code><span class="hljs-attr">Xb</span> = <span class="hljs-number">5678</span>; <span class="hljs-attr">Yb</span> = <span class="hljs-number">1234</span>; <span class="hljs-attr">n</span> = <span class="hljs-number">4</span>; <span class="hljs-attr">a</span> = <span class="hljs-number">56</span>; <span class="hljs-attr">b</span> = <span class="hljs-number">78</span>; <span class="hljs-attr">c</span> = <span class="hljs-number">12</span>; <span class="hljs-attr">d</span> = <span class="hljs-number">34</span>;
+
+// Числа можно выразить в следующем виде
+<span class="hljs-attr">Xc</span> = <span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * a + b
+<span class="hljs-attr">Yb</span> = <span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * c + d
+
+// Тперь получим их произведения
+ <span class="hljs-attr">step1</span> = (<span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * a + b) * (<span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * c + d)
+ <span class="hljs-attr">step2</span> = <span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * a * (<span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * c + d) + b * (<span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * c + d)
+ <span class="hljs-attr">step3</span> = <span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * a * <span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * c + <span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * a * d + b * <span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * c + b * d
+ <span class="hljs-attr">step4</span> = <span class="hljs-number">10</span>^n * a * c + <span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * a * d + b * <span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * c + b * d
+
+<span class="hljs-attr">ac</span> = a*c
+<span class="hljs-attr">ad</span> = a*d
+<span class="hljs-attr">bc</span> = b*c
+<span class="hljs-attr">bd</span> = b*d
+
+<span class="hljs-attr">step4</span> = <span class="hljs-number">10</span>^n * ac + <span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * ad + <span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * bc + bd
+<span class="hljs-attr">step4</span> = <span class="hljs-number">10</span>^n * ac + <span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * (ad + bc) + bd
+
+Умножение Карацубы
+
+<span class="hljs-attr">sK1</span> = a*c
+<span class="hljs-attr">sK2</span> = b*d
+<span class="hljs-attr">sK3</span> = (a+b)*(d+c)
+<span class="hljs-attr">sK4</span> = sK3 - sK1 - sK2
+<span class="hljs-attr">sK5</span> = <span class="hljs-number">10</span>^n * sK1 + <span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>)*sK4 + sK2
+
+<span class="hljs-attr">p=(a+b)</span>
+<span class="hljs-attr">q=(d+c)</span>
+<span class="hljs-attr">sK1</span> = a*c
+<span class="hljs-attr">sK2</span> = b*d
+<span class="hljs-attr">sK3</span> = p*q
+<span class="hljs-attr">sK4</span> = sK3 - sK1 - sK2
+<span class="hljs-attr">sK5</span> = <span class="hljs-number">10</span>^n * sK1 + <span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>)*sK4 + sK2
+</code></pre></div>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Joplin | Docs | RU | Plugin | Создание плагина оглавления]]></title>
             <guid>f75dbe0c675d49fc8330519ba053dca4</guid>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" href="/_assets/main.css" />
+
+    <title>Рекурсивное алгоритм умножения Карацубы - ILINEI52 - Personal page</title>
+  <link rel="stylesheet" href="/_markdown_plugin_assets/highlight.js/atom-one-light.css" /></head>
+  <body>
+    <div class="main">
+      <nav class="navigation">
+        <a href="/">ILINEI52 - Personal page</a>
+      </nav>
+      <article>
+        <header>
+          <h1 class="article-title">Рекурсивное алгоритм умножения Карацубы</h1>
+          <div class="article-info">
+            <div>
+              <span
+                >Created At：<time datetime="1637681190189"
+                  >2021-11-23 18:26</time
+                ></span
+              >
+              <span
+                >Updated At：<time datetime="1637744608129"
+                  >2021-11-24 12:03</time
+                ></span
+              >
+            </div>
+            
+            <div>
+              Keywords: 
+              <span class="keyword">mincon-control</span>
+              
+              <span class="keyword">ms</span>
+              
+              <span class="keyword">iie52.ru_public</span>
+              
+            </div>
+            
+          </div>
+        </header>
+        <div class="article-content markdown-body"><div><pre class="hljs"><code><span class="hljs-attr">Xb</span> = <span class="hljs-number">5678</span>; <span class="hljs-attr">Yb</span> = <span class="hljs-number">1234</span>; <span class="hljs-attr">n</span> = <span class="hljs-number">4</span>; <span class="hljs-attr">a</span> = <span class="hljs-number">56</span>; <span class="hljs-attr">b</span> = <span class="hljs-number">78</span>; <span class="hljs-attr">c</span> = <span class="hljs-number">12</span>; <span class="hljs-attr">d</span> = <span class="hljs-number">34</span>;
+
+// Числа можно выразить в следующем виде
+<span class="hljs-attr">Xc</span> = <span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * a + b
+<span class="hljs-attr">Yb</span> = <span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * c + d
+
+// Тперь получим их произведения
+ <span class="hljs-attr">step1</span> = (<span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * a + b) * (<span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * c + d)
+ <span class="hljs-attr">step2</span> = <span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * a * (<span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * c + d) + b * (<span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * c + d)
+ <span class="hljs-attr">step3</span> = <span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * a * <span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * c + <span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * a * d + b * <span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * c + b * d
+ <span class="hljs-attr">step4</span> = <span class="hljs-number">10</span>^n * a * c + <span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * a * d + b * <span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * c + b * d
+
+<span class="hljs-attr">ac</span> = a*c
+<span class="hljs-attr">ad</span> = a*d
+<span class="hljs-attr">bc</span> = b*c
+<span class="hljs-attr">bd</span> = b*d
+
+<span class="hljs-attr">step4</span> = <span class="hljs-number">10</span>^n * ac + <span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * ad + <span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * bc + bd
+<span class="hljs-attr">step4</span> = <span class="hljs-number">10</span>^n * ac + <span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>) * (ad + bc) + bd
+
+Умножение Карацубы
+
+<span class="hljs-attr">sK1</span> = a*c
+<span class="hljs-attr">sK2</span> = b*d
+<span class="hljs-attr">sK3</span> = (a+b)*(d+c)
+<span class="hljs-attr">sK4</span> = sK3 - sK1 - sK2
+<span class="hljs-attr">sK5</span> = <span class="hljs-number">10</span>^n * sK1 + <span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>)*sK4 + sK2
+
+<span class="hljs-attr">p=(a+b)</span>
+<span class="hljs-attr">q=(d+c)</span>
+<span class="hljs-attr">sK1</span> = a*c
+<span class="hljs-attr">sK2</span> = b*d
+<span class="hljs-attr">sK3</span> = p*q
+<span class="hljs-attr">sK4</span> = sK3 - sK1 - sK2
+<span class="hljs-attr">sK5</span> = <span class="hljs-number">10</span>^n * sK1 + <span class="hljs-number">10</span>^(n/<span class="hljs-number">2</span>)*sK4 + sK2
+</code></pre></div>
+</div>
+      </article>
+    </div>
+  </body>
+</html>
